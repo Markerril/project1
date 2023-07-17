@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Forgot Password?</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="form-container">
+  <div class="logo-container">Forgot Password</div>
+
+      <form class="form">
+        <div class="form-group">
+         <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="Enter your email" required="">
+        </div>
+         <ion-button class="form-submit-btn" id="open-modal" expand="block">Send Email</ion-button>
+         <ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+          <ng-template>
+            <form class="form"> <div class="title">OTP</div> <div class="title">Verification Code</div> <p class="message">We have sent a verification code to your mobile number</p> <div class="inputs"> <input id="input1" type="text" maxlength="1"> <input id="input2" type="text" maxlength="1"> <input id="input3" type="text" maxlength="1"> <input id="input4" type="text" maxlength="1"> </div> <button class="action" routerLink="/home">verify me</button> </form>
+          </ng-template>   
+        </ion-modal>  
+     </form>
+
+     <a href="#" class="signup-link link"> Back to Log in</a>
+  </div>
+</ion-content>

@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-button routerLink="/tabs">
+    <ion-icon name="home-outline"></ion-icon>
+  </ion-button>
+</ion-header>
+
+  <ion-content [fullscreen]="true">
+    <div class="text">
+      <p class="text1">My</p>
+      <p class="text2">Profile</p>
+      
+      <ion-grid>
+      <ion-img src="./assets/id.png" class="idpic"></ion-img>
+      <p class="text3">Mark Erril Camson</p>
+      <p class="text4">20-00832</p>
+      </ion-grid>
+    </div>
+
+  <div class="buttons">
+    <ion-card class="button">
+      <ion-item>
+        <ion-icon name="document-outline" slot="start"></ion-icon>
+         <ion-label class="label">Certificate of Registration</ion-label>
+       <ion-button fill="outline" slot="end" routerLink="/cor" >View</ion-button>
+   </ion-item>
+  </ion-card>
+
+  <ion-card class="button">
+    <ion-item>
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+       <ion-label class="label">View Student ID</ion-label>
+      <ion-button fill="outline" slot="end" routerLink="/id">View</ion-button>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="button">
+    <ion-item>
+      <ion-icon name="book-outline" slot="start"></ion-icon>
+        <ion-label class="label">Subjects</ion-label>
+      <ion-button fill="outline" slot="end" routerLink="/subjects">View</ion-button>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="button">
+    <ion-item>
+      <ion-icon name="megaphone-outline" slot="start"></ion-icon>
+        <ion-label class="label">Class Schedule</ion-label>
+      <ion-button fill="outline" slot="end" routerLink="/sched">View</ion-button>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="button">
+    <ion-item>
+      <ion-icon name="qr-code-outline" slot="start"></ion-icon>
+       <ion-label class="label">My QR-Code</ion-label>
+      <ion-button fill="outline" slot="end" routerLink="/portal">View</ion-button>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="button">
+    <ion-item >
+      <ion-icon name="log-out-outline" slot="start"></ion-icon>
+       <ion-label class="label"></ion-label>
+      <ion-button fill="outline" slot="start" routerLink="/home">Logout</ion-button>
+    </ion-item>
+  </ion-card>
+</div>

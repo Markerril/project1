@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="text">
+    
+      <p class="text2">Grades</p>
+    </div>
+    <ion-icon name="close" slot="end" size="large" routerLink="/tabs"></ion-icon>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">grades</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-img src="./assets/grades.png" class="idpic"></ion-img>
+  
+  <ion-button>Print</ion-button>
+  <ion-tabs>
+  
+    <ion-tab-bar slot="bottom">
+       <ion-tab-button routerLink="/portal">
+         <ion-label>Qr Code</ion-label>
+        <ion-icon name="qr-code-outline"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <ion-label routerLink="/activity">Activity</ion-label>
+        <ion-icon name="calendar-outline"></ion-icon>
+      </ion-tab-button>
+     
+      <ion-tab-button>
+        <ion-label routerLink="/grades">Grades</ion-label>
+        <ion-icon name="stats-chart-outline"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button routerLink="/profile">
+        <ion-label>Profile</ion-label>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-tab-button>
+      
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

@@ -1,0 +1,72 @@
+.text {
+    position: relative;
+    font-family: 'Aileron-Heavy', sans-serif;
+    font-size: 40px;
+    font-weight:900;
+    left: 5%;
+    line-height: 1px;
+    
+    .text1 {
+      font-family: Aileron-Heavy;
+    }
+    .text2{
+      font-family: Aileron-Heavy;
+      color: darkred;
+    }
+    .text3{
+        font-family: Aileron-Heavy;
+        color: rgb(25, 5, 252);
+      }
+}
+
+.newspic{
+    position: relative;
+    width: 90%;
+    left: 5%;
+}
+
+
+
+.contents{
+    margin-right: 5%;
+}
+.pic{
+    width: 50px;
+    height:50px;
+    object-fit: cover;
+    
+}
+
+ion-tab-bar{
+    --border: none;
+    --background: rgba(255, 255, 255, 0.5);
+    margin: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.20),
+    0px 1px 3px 0px rgba(0,0,0,0.02);
+
+    ion-tab-button {
+        ion-icon{
+            transition: 200ms all ease-in-out;
+        }
+    }
+
+    .tab-selected {
+        ion-icon {
+            color: darkred;
+        }
+    }
+}
+
+ion-card {
+    --background: #c4c4e2;
+    --color: #151716;
+  }
+  
+  ion-card-title {
+    --color: #050505;
+  }
+  
+  ion-card-subtitle {
+    --color: #2d1aaa;
+  }

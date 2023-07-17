@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="close" slot="end" size="large" routerLink="/profile"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+
+    </ion-toolbar>
+  </ion-header>
+  <div class="cor">
+   <ion-img src="./assets/cor.png" class=""></ion-img>
+  </div>
+ 
+  <ion-tabs>
+  
+ <ion-tab-bar slot="bottom">
+   <ion-tab-button routerLink="/portal">
+        <ion-label>Qr Code</ion-label>
+        <ion-icon name="qr-code-outline"></ion-icon>
+    </ion-tab-button>
+
+     <ion-tab-button>
+        <ion-label routerLink="/activity">Activity</ion-label>
+        <ion-icon name="calendar-outline"></ion-icon>
+    </ion-tab-button>
+     
+    <ion-tab-button>
+        <ion-label routerLink="/grades">Grades</ion-label>
+        <ion-icon name="stats-chart-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button routerLink="/profile">
+        <ion-label>Profile</ion-label>
+        <ion-icon name="person-outline"></ion-icon>
+    </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  <div class="cor1">
+    <ion-button >Print</ion-button>
+  </div>
+</ion-content>

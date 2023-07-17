@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="close" slot="end" size="large" routerLink="/tabs"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="text">
+     <p class="text2">Activity</p>
+  </div>
+  <ion-card>
+    <ion-item>
+      <ion-textarea placeholder="Write the task name here"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Priority</ion-label>
+        <ion-select-option value="Low">Low</ion-select-option>
+        <ion-select-option value="Middle">Middle</ion-select-option>
+        <ion-select-option value="High">High</ion-select-option>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="calendar-outline" slot="start"></ion-icon>
+      <ion-label>Due Date</ion-label>
+      <ion-datetime displayFormat="D MMM YYYY H:mm"></ion-datetime>
+    </ion-item>
+
+    <ion-button class="ion-margin" expand="block" routerLink="/tabs">Update Activity</ion-button>
+  </ion-card>
+  
+<ion-tabs>
+  
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLink="/portal">
+      <ion-label>Qr Code</ion-label>
+      <ion-icon name="qr-code-outline"></ion-icon>
+    </ion-tab-button>
+    
+  <ion-tab-button>
+      <ion-label routerLink="/activity">Activity</ion-label>
+      <ion-icon name="calendar-outline"></ion-icon>
+  </ion-tab-button>
+   
+   <ion-tab-button>
+      <ion-label routerLink="/grades">Grades</ion-label>
+      <ion-icon name="stats-chart-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button routerLink="/profile">
+      <ion-label>Profile</ion-label>
+      <ion-icon name="person-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+</ion-content>
